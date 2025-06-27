@@ -1,5 +1,5 @@
 {% set name = "pysmartdl2" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysmartdl2-{{ version }}.tar.gz
-  sha256: 70238764afdf3775eb62284cbf53e7fd5afc2a1a78caf765273fb71e36fe4527
+  sha256: 1a87a3f299f285852eec2507c57fea456808279a84a6a6fb87c8112c612373b8
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   host:
