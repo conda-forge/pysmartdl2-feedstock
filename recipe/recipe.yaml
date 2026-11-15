@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pysmartdl2
-  version: "2.1.0"
+  version: "2.1.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pysmartdl2-${{ version }}.tar.gz
-  sha256: 0e336d15724a8d000ea8a55c43ceabfa3e8f795e5e0d2112f98c85810a227eb6
+  sha256: f0a34aeaf1270499f59379b651700f9f131faf08b6fa004c7fb659d769fafe1e
 
 build:
   number: 0
